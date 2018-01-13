@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
-    <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
     <header>
         <div id="navbar">
-            
             <nav>
                 <h1>John Tansor</h1>
                 <a id="about" href="index.html">About</a>
@@ -28,19 +28,22 @@
             <!-- Need ACTION PAGE?!? -->
             <form action="action_page.php">
 
-                <label for="enterName">Name</label>
-                <input type="text" id="enterName" name="inputName" placeholder="John Smith">
-
-                <label for="enterEmail">Email</label>
-                <input type="text" id="enterEmail" name="inputEmail" placeholder="example@gmail.com">
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message"></textarea>
-
-                <input type="submit" value="Submit">
-
+                <div id="etrName" class="formClass">
+                    <label for="enterName">Name</label>
+                    <input type="text" id="enterName" name="inputName" placeholder="John Smith">
+                </div>
+                <div id="etrEmail" class="formClass">
+                    <label for="enterEmail">Email</label>
+                    <input type="text" id="enterEmail" name="inputEmail" placeholder="example@gmail.com">
+                </div>
+                <div id="etrMsg" class="formClass">
+                    <label for="message" id="ass">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <div id="etrSubmit">
+                    <input type="submit" value="Submit">
+                </div>
             </form>
-
         </section>
 
         <aside>
@@ -57,6 +60,5 @@
         <p id="footTxt">© Copyright 2018 John Tansor</p> 
     </footer>
     
-
 </body>
 </html>
